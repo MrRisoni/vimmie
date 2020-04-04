@@ -1,7 +1,15 @@
 :let mapleader="/"
 let g:sauce_path = "~/vimmie/sauces"
-let NERDTreeShowHidden=1
+"let NERDTreeShowHidden=1
 
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 1
 
 
 let g:php_cs_fixer_path = "~/backoffice/vendor/bin/php-cs-fixer"
@@ -176,6 +184,8 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'pangloss/vim-javascript'
 Plug 'maxmellon/vim-jsx-pretty'
 Plug 'ncm2/ncm2'
+Plug 'kien/ctrlp.vim' " Fuzzy file finder
+Plug 'vim-syntastic/syntastic'
 Plug 'joonty/vim-sauce'
 Plug 'ap/vim-css-color'
 Plug 'roxma/nvim-yarp'
@@ -189,9 +199,9 @@ Plug 'roxma/nvim-yarp'
 Plug 'phpactor/ncm2-phpactor'
 Plug 'tobyS/pdv'
 Plug 'maksimr/vim-jsbeautify'
-Plug 'prettier/vim-prettier', { 'do': 'yarn install', 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'yaml', 'html'] }
+Plug 'prettier/vim-prettier', { 'do': 'yarn install', 'for': ['javascript', 'typescript', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'yaml', 'html'] }
 let g:prettier#autoformat = 0
-autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue,*.yaml,*.html PrettierAsync
+autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.less,*.scss,*.json,*.graphql,*.md,*.vue,*.yaml,*.html PrettierAsync
 call plug#end()
 
 
