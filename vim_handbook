@@ -1,0 +1,63 @@
+
+The Vim handbook
+
+basics
+
+left h
+down j
+up k
+right l
+
+Word deletion: place cursor the the beginning of the word
+and  type dw
+
+
+Move to beginning of sentence 0
+
+Delete a whole line  dd
+
+Replace character: go with the cursor to tht characher , 
+type r nd then type character you want
+
+:w write
+:wq write and quit
+:q! quit and dont save
+
+:u undo
+Ctrl + R redo
+
+PASTE
+i) place cursor at begin
+ii) V for lines
+iii) y
+iv) p to paste after cursor
+
+
+SEARCH case insensitive
+:set ignore case
+/your_word and then Enter
+n for next occurence N for previous
+
+Move between tabs
+Ctrl + w ,w
+
+
+///
+#########################
+-----------------------
+
+Find foo and replace with bar whole words and ask for confirmation
+
+:/s/\<foo\>/bar/gc
+
+
+Commenting :tim pop
+vgc  
+v for visual mode
+
+
+
+To start using PHP auto completion, press the Ctrl + x followed
+ by Ctrl + o keys while writing some PHP functions.
+:set omnifunc=phpcomplete#CompletePHP
+
