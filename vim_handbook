@@ -61,3 +61,10 @@ To start using PHP auto completion, press the Ctrl + x followed
  by Ctrl + o keys while writing some PHP functions.
 :set omnifunc=phpcomplete#CompletePHP
 
+vim with no plugins 
+git remote add origin https://github.com/MrRisoni/vimmie.git
+
+
+vim diff for merge
+nagivate to chanes ]c  and [c
+merge :diffput , :difffget

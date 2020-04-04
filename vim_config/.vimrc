@@ -1,5 +1,5 @@
 :let mapleader="/"
-let g:sauce_path = "~/sauces_vim"
+let g:sauce_path = "~/vimmie/sauces"
 let NERDTreeShowHidden=1
 
 
@@ -177,6 +177,7 @@ Plug 'pangloss/vim-javascript'
 Plug 'maxmellon/vim-jsx-pretty'
 Plug 'ncm2/ncm2'
 Plug 'joonty/vim-sauce'
+Plug 'ap/vim-css-color'
 Plug 'roxma/nvim-yarp'
 Plug 'ncm2/ncm2-bufword'
 Plug 'shawncplus/phpcomplete.vim'
