@@ -46,7 +46,8 @@ nnoremap = :Dashes <Cr>
 " Ctrl + B for PHP syntax check
 map <C-B> :!php -l %<CR>
 
-
+" disable sound bell
+set visualbell
 
 " Enable folding
 "-- FOLDING --
@@ -190,7 +191,12 @@ Plug 'ncm2/ncm2'
 Plug 'kien/ctrlp.vim' " Fuzzy file finder
 Plug 'vim-syntastic/syntastic'
 Plug 'joonty/vim-sauce'
-Plug 'ap/vim-css-color'
+" Plug 'ap/vim-css-color'
+Plug 'gko/vim-coloresque'
+Plug 'flazz/vim-colorschemes'
+Plug 'majutsushi/tagbar'
+Plug 'KabbAmine/vCoolor.vim'
+Plug 'simnalamburt/vim-mundo'
 Plug 'roxma/nvim-yarp'
 Plug 'ncm2/ncm2-bufword'
 Plug 'shawncplus/phpcomplete.vim'
