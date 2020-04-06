@@ -15,7 +15,7 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 1
 
 
-let g:php_cs_fixer_path = "~/backoffice/vendor/bin/php-cs-fixer"
+let g:php_cs_fixer_path = "~/vendor/bin/php-cs-fixer"
 " If you use php-cs-fixer version 2.x
 let g:php_cs_fixer_rules = "@PSR2"          " options: --rules (default:@PSR2)
 "let g:php_cs_fixer_cache = ".php_cs.cache" " options: --cache-file
