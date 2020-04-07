@@ -4,7 +4,6 @@ let g:sauce_path = "~/vimmie/sauces"
 
 let g:ctrlp_custom_ignore = 'vendor\|node_modules\|DS_Store\|git'
 
-
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
