@@ -171,6 +171,8 @@ let g:NERDTreeIndicatorMapCustom = {
 let g:prettier#config#tab_width = 2
 let g:prettier#config#use_tabs = 'false'
 
+let g:prettier#autoformat = 1
+autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.less,*.scss,*.json,*.graphql,*.md,*.vue,*.yaml,*.html PrettierAsync
 
 " Plugins will be downloaded under the specified directory.
 call plug#begin('~/.vim/plugged')
@@ -208,9 +210,9 @@ Plug 'phpactor/ncm2-phpactor'
 Plug 'tobyS/pdv'
 Plug 'maksimr/vim-jsbeautify'
 Plug 'prettier/vim-prettier', { 'do': 'yarn install', 'for': ['javascript', 'typescript', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'yaml', 'html'] }
-let g:prettier#autoformat = 0
-autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.less,*.scss,*.json,*.graphql,*.md,*.vue,*.yaml,*.html PrettierAsync
+
 call plug#end()
+
 
 
 autocmd BufWritePost *.php silent! call PhpCsFixerFixFile()
