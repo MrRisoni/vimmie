@@ -1,13 +1,14 @@
+VIM HANDBOOK -*- mode:org -*-
+The vim handbook
 
-The Vim handbook
-
-basics
+* Navigation
 
 left h
 down j
 up k
 right l
 
+* Deletion
 Word deletion: place cursor the the beginning of the word
 and  type dw
 
@@ -19,25 +20,28 @@ Delete a whole line  dd
 Replace character: go with the cursor to tht characher , 
 type r nd then type character you want
 
+* Undo, Redo, Save Exit
 :w write
 :wq write and quit
 :q! quit and dont save
 
 :u undo
 Ctrl + R redo
-
+* Cut,Copy,Paste
 PASTE
 i) place cursor at begin
 ii) V for lines
 iii) y
 iv) p to paste after cursor
 
+* Search
 
 SEARCH case insensitive
 :set ignore case
 /your_word and then Enter
 n for next occurence N for previous
 
+* Splits and navigation
 Move between tabs
 Ctrl + w ,w
 
@@ -45,7 +49,7 @@ Ctrl + w ,w
 ///
 #########################
 -----------------------
-
+* Find,replace
 Find foo and replace with bar whole words and ask for confirmation
 
 :/s/\<foo\>/bar/gc
@@ -55,7 +59,7 @@ Commenting :tim pop
 vgc  
 v for visual mode
 
-
+* Plugins
 
 To start using PHP auto completion, press the Ctrl + x followed
  by Ctrl + o keys while writing some PHP functions.
@@ -64,6 +68,7 @@ To start using PHP auto completion, press the Ctrl + x followed
 vim with no plugins 
 git remote add origin https://github.com/MrRisoni/vimmie.git
 
+* Git diff
 
 vim diff for merge
 nagivate to chanes ]c  and [c
