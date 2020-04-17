@@ -41,11 +41,23 @@ SEARCH case insensitive
 /your_word and then Enter
 n for next occurence N for previous
 
-* Splits and navigation
+* Splits ,Tabs and navigation
 Move between tabs
 Ctrl + w ,w
+:vsp  new vertical split
+"Swap top/bottom or left/right split
+Ctrl+W R
 
+"Break out current window into a new tabview
+Ctrl+W T
 
+"Close every window in the current tabview but the current one
+Ctrl+W o
+ :tabn, and to switch to the previous tab, use :tabp
+ map <C-t><up> :tabr<cr>
+map <C-t><down> :tabl<cr>
+map <C-t><left> :tabp<cr>
+map <C-t><right> :tabn<cr>
 ///
 #########################
 -----------------------
@@ -59,7 +71,12 @@ Commenting :tim pop
 vgc  
 v for visual mode
 
+
 * Plugins
+** NerdTree
+      A file browser
+** fzf
+      Fuzzy File Finder
 
 To start using PHP auto completion, press the Ctrl + x followed
  by Ctrl + o keys while writing some PHP functions.

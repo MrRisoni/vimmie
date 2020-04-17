@@ -2,7 +2,12 @@ Emacs Hanbook -*- mode: org -*-
 
 * Navigation
 * Hello editing world
+
 * Org Mode
+** Lists
+  nested lists
+** Tables
+
 * Copy,Cut,Paste
 * Undo,Redo
 * Saving
