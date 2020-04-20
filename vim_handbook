@@ -90,3 +90,6 @@ git remote add origin https://github.com/MrRisoni/vimmie.git
 vim diff for merge
 nagivate to chanes ]c  and [c
 merge :diffput , :difffget
+
+* Vim CSS Color
+:VCoolor
