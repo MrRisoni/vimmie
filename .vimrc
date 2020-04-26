@@ -1,4 +1,4 @@
-:let mapleader="/"
+let mapleader="/"
 let g:sauce_path = "~/vimmie/sauces"
 "let NERDTreeShowHidden=1
 
@@ -119,7 +119,8 @@ nnoremap = :BeautyXml <Cr>
 " mein getters setters
 " com! GetSetPHP 
 
-let g:auto_save = 1  " enable AutoSave on Vim startup
+
+" let g:auto_save = 1  " enable AutoSave on Vim startup
 
 " enable ncm2 for all buffers
 " autocmd BufEnter * call ncm2#enable_for_buffer()
