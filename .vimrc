@@ -2,6 +2,24 @@ let mapleader="/"
 let g:sauce_path = "~/vimmie/sauces"
 "let NERDTreeShowHidden=1
 
+" Nordic chars lowercase
+:command Uma :normal i ä<ESC>
+:command Umo :normal i ö<ESC>
+:command Umu :normal i ü<ESC>
+:command Oma :normal i å<ESC>
+:command Omo :normal i ø<ESC>
+:command Ame :normal i æ<ESC>
+
+" Nordic chars uppercase
+:command UMA :normal i Ä<ESC>
+:command UMO :normal i Ö<ESC>
+:command UMU :normal i Ü<ESC>
+:command OMA :normal i Å<ESC>
+:command OMO :normal i Ø<ESC>
+:command AME :normal i Æ<ESC>
+
+
+
 let g:ctrlp_custom_ignore = 'vendor\|node_modules\|DS_Store\|git'
 
 set statusline+=%#warningmsg#
