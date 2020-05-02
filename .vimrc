@@ -131,18 +131,18 @@ nnoremap = :BeautyJson <Cr>
 function! Germanify()
 py3 << EOF
 import sys
+import os
 import vim
 transfigure =[ [ 'å','ao'],[ 'ä','ae'],[ 'ü','ue']]
 
-sweeden = vim.current.buffer[0] # sys.stdin
-#sweeden = sys.argv[1]
-
+buf = vim.current.buffer[0]
+sweeden = ''
 for fig in transfigure:
-    sweeden = sweeden.replace(fig[1],fig[0])
+    sweeden += buf.replace(fig[1],fig[0])
 
-print (sweeden)
+#print (sweeden)
 #return sweeden
-
+vim.current.buffer[:]  =[sweeden]
 EOF
 endfunction
 
