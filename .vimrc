@@ -127,10 +127,34 @@ map <C-a> <esc>ggVG<CR>
 com! BeautyJson :%!python -m json.tool
 nnoremap = :BeautyJson <Cr>
 
+" Germanic chars
+function! Germanify()
+py3 << EOF
+import sys
+import vim
+transfigure =[ [ 'å','ao'],[ 'ä','ae'],[ 'ü','ue']]
+
+sweeden = vim.current.buffer[0] # sys.stdin
+#sweeden = sys.argv[1]
+
+for fig in transfigure:
+    sweeden = sweeden.replace(fig[1],fig[0])
+
+print (sweeden)
+#return sweeden
+
+EOF
+endfunction
+
+com! Germanify call Germanify()
+nnoremap = :Germanify<Cr>
+
 " xml pretty print
 com! BeautyXml :%!python3 -c "import xml.dom.minidom, sys; print(xml.dom.minidom.parse(sys.stdin).toprettyxml())"
 
 nnoremap = :BeautyXml <Cr>
+
+
 
 " 
 "
